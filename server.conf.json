@@ -1,0 +1,5 @@
+{
+    "port": 12345,
+    "apiBaseUrl": "https://hw.shri.yandex/api",
+    "apiToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUxMTY1NjQwIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Im5pZWxzYm9ociIsInVybjpnaXRodWI6dXJsIjoiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS91c2Vycy9uaWVsc2JvaHIiLCJuYmYiOjE1ODcxMjE4MDMsImV4cCI6MTU4OTcxMzgwMywiaXNzIjoiU2hyaS1Ib21ld29yayIsImF1ZCI6IlNocmktSG9tZXdvcmsifQ._sNVBc0x9UTWCzR7ahm_JtwmbrNqPzQSzGJ7BpYgc9o"
+}

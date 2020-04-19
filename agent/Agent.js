@@ -1,7 +1,8 @@
+const fs = require('fs');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
-const { notifyServer, notifyBuildResult } = require('../requests');
+const { notifyServer, notifyBuildResult } = require('./requests');
 
 const GIT_URL = 'https://github.com';
 const LOCAL_REPOSITORY = './tmp/';
@@ -44,6 +45,7 @@ class Agent {
     let duration = Date.now();
     let success = false;
     try {
+      fs.mkdirSync(LOCAL_REPOSITORY, { recursive: true });
       await exec(`git clone ${GIT_URL}/${repository}.git`, {
         cwd: LOCAL_REPOSITORY,
       });

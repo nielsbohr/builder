@@ -55,30 +55,14 @@ const postRequestFinish = (API_URL, TOKEN, id, status, data, duration) => instan
   },
 });
 
-const notifyServer = ({
-  serverHost, serverPort, host, port,
-}) => instance({
-  method: 'get',
-  url: `http://${serverHost}:${serverPort}/notify-agent?host=${host}&port=${port}`,
-});
-
-const notifyBuildResult = ({ serverHost, serverPort }, data) => instance({
-  method: 'post',
-  url: `http://${serverHost}:${serverPort}/notify-build-result`,
-  data,
-});
-
 const pingAgent = (host, port) => instance({
   method: 'get',
   url: `http://${host}:${port}/ping`,
 });
 
-
 module.exports = {
   getBuilds,
   getSettings,
-  notifyServer,
-  notifyBuildResult,
   postBuildToAgent,
   postRequestStart,
   postRequestFinish,

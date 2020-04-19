@@ -5,7 +5,7 @@ const {
   postRequestStart,
   postRequestFinish,
   pingAgent,
-} = require('../requests');
+} = require('./requests');
 
 class Server {
   constructor({
